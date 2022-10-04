@@ -5,6 +5,7 @@ const blogSection = document.querySelector('.blog-section');
 auth.onAuthStateChanged((user) => {
     if (user) {
         login.style.display = "none";
+        getUserWrittenBlogs();
 
     } else {
         setupLoginButton();

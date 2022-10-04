@@ -50,16 +50,17 @@ let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oc
 
 publishBtn.addEventListener('click', () => {
     if (articleFeild.value.length && blogTitleField.value.length) {
-        let docName;
-        if (blogID[0] == 'editor') {
-            let letters = 'abcdefghijklmnopqrstuvwxyz';
-            let blogTitle = blogTitleField.value.split(" ").join("-");
-            let id = '';
-            for (let i = 0; i < 4; i++) {
-                id += letters[Math.floor(Math.random() * letters.length)];
-            }
+        // let docName;
+        // if (blogID[0] == 'editor') {
+        //     let letters = 'abcdefghijklmnopqrstuvwxyz';
+        //     let blogTitle = blogTitleField.value.split(" ").join("-");
+        //     let id = '';
+        //     for (let i = 0; i < 4; i++) {
+        //         id += letters[Math.floor(Math.random() * letters.length)];
+        //     }
+        //     docName = `${blogTitle}-${id}`;
 
-        }
+        // }
         // generating id
         let letters = 'abcdefghijklmnopqrstuvwxyz';
         let blogTitle = blogTitleField.value.split(" ").join("-");
